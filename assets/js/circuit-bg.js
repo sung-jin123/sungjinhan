@@ -1,17 +1,16 @@
 /**
- * Circuit Background Animation
- * Creates a connecting node network effect
+ * Particle Background Animation
+ * Creates a smooth floating particle effect
  */
 
-class CircuitBackground {
+class ParticleBackground {
     constructor() {
         this.canvas = document.getElementById('canvas-bg');
         if (!this.canvas) return;
 
         this.ctx = this.canvas.getContext('2d');
-        this.nodes = [];
+        this.particles = [];
         this.resize();
-        this.init();
 
         window.addEventListener('resize', () => this.resize());
         this.animate();
@@ -22,27 +21,23 @@ class CircuitBackground {
         this.height = window.innerHeight;
         this.canvas.width = this.width;
         this.canvas.height = this.height;
-        this.initNodes();
+        this.initParticles();
     }
 
-    initNodes() {
-        this.nodes = [];
+    initParticles() {
+        this.particles = [];
         // Density based on screen size
-        const density = Math.floor((this.width * this.height) / 9000);
+        const density = Math.floor((this.width * this.height) / 15000);
 
         for (let i = 0; i < density; i++) {
-            this.nodes.push({
+            this.particles.push({
                 x: Math.random() * this.width,
                 y: Math.random() * this.height,
-                vx: (Math.random() - 0.5) * 0.5,
-                vy: (Math.random() - 0.5) * 0.5,
-                size: Math.random() * 2 + 1
+                vx: (Math.random() - 0.5) * 0.3,
+                vy: (Math.random() - 0.5) * 0.3,
+                radius: Math.random() * 1.5 + 0.5
             });
         }
-    }
-
-    init() {
-        this.initNodes();
     }
 
     animate() {
@@ -52,39 +47,24 @@ class CircuitBackground {
 
         // Get theme color for particles
         const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        const particleColor = isDark ? 'rgba(255, 255, 255, 0.15)' : 'rgba(0, 0, 0, 0.1)';
-        const lineColor = isDark ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 0, 0, 0.05)';
+        const particleColor = isDark ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.15)';
 
-        // Update and draw nodes
-        this.nodes.forEach(node => {
-            node.x += node.vx;
-            node.y += node.vy;
+        // Update and draw particles
+        this.particles.forEach(particle => {
+            particle.x += particle.vx;
+            particle.y += particle.vy;
 
-            // Bounce off edges
-            if (node.x < 0 || node.x > this.width) node.vx *= -1;
-            if (node.y < 0 || node.y > this.height) node.vy *= -1;
+            // Wrap around edges
+            if (particle.x < 0) particle.x = this.width;
+            if (particle.x > this.width) particle.x = 0;
+            if (particle.y < 0) particle.y = this.height;
+            if (particle.y > this.height) particle.y = 0;
 
-            // Draw node
+            // Draw particle
             this.ctx.beginPath();
-            this.ctx.arc(node.x, node.y, node.size, 0, Math.PI * 2);
+            this.ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
             this.ctx.fillStyle = particleColor;
             this.ctx.fill();
-
-            // Connect nearby nodes
-            this.nodes.forEach(otherNode => {
-                const dx = node.x - otherNode.x;
-                const dy = node.y - otherNode.y;
-                const distance = Math.sqrt(dx * dx + dy * dy);
-
-                if (distance < 150) {
-                    this.ctx.beginPath();
-                    this.ctx.lineWidth = 1 - (distance / 150);
-                    this.ctx.strokeStyle = lineColor;
-                    this.ctx.moveTo(node.x, node.y);
-                    this.ctx.lineTo(otherNode.x, otherNode.y);
-                    this.ctx.stroke();
-                }
-            });
         });
 
         requestAnimationFrame(() => this.animate());
@@ -93,5 +73,5 @@ class CircuitBackground {
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new CircuitBackground();
+    new ParticleBackground();
 });
