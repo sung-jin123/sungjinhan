@@ -89,24 +89,24 @@
 
 /* Dark Theme (Deep Space with Soft Blue Accents) */
 [data-theme="dark"] {
-  --primary-color: #90caf9;
-  --primary-dark: #ffffff;
-  --secondary-color: #64b5f6;
-  --accent-color: #42a5f5;
-  --background-color: #0d1b2a;
-  --surface-color: #1a237e;
-  --text-primary: #eceff1;
-  --text-secondary: #80deea;
-  --text-muted: #4fc3f7;
-  --border-color: #1976d2;
-  --shadow-color: rgba(33, 150, 243, 0.25);
-  --shadow-hover: rgba(33, 150, 243, 0.4);
+  --primary-color: #64b5f6;
+  --primary-dark: #90caf9;
+  --secondary-color: #42a5f5;
+  --accent-color: #5dade2;
+  --background-color: #1a2332;
+  --surface-color: #243447;
+  --text-primary: #e3f2fd;
+  --text-secondary: #b3d9f2;
+  --text-muted: #80b3d1;
+  --border-color: #3d5a7a;
+  --shadow-color: rgba(100, 181, 246, 0.2);
+  --shadow-hover: rgba(100, 181, 246, 0.3);
 
   /* Code Blocks - Dark */
-  --code-bg: #1e1e1e;
+  --code-bg: #1e2936;
   /* VS Code Dark style */
-  --code-text: #d4d4d4;
-  --code-border: #333333;
+  --code-text: #b3d9f2;
+  --code-border: #3d5a7a;
 }
 
 [data-theme="light"] {
