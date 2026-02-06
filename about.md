@@ -1,26 +1,22 @@
 ---
 layout: default
-title: About        
-permalink: /about/  
+title: About
+permalink: /about/
 ---
 
 <!-- =======================
-     HERO SECTION (페이지 최상단)
+     HERO SECTION
      ======================= -->
 <div class="hero-section" style="padding: 100px 0; background: var(--background-color); border-bottom: 1px solid var(--border-color); text-align: center;">
     <div class="container">
-        <!-- About 페이지 가장 큰 제목 -->
         <h1 style="font-size: var(--font-size-3xl); letter-spacing: -0.02em; color: var(--text-primary);">
-            About Me
+            Sungjin Han
         </h1>
 
-        <!-- 한 줄 요약 소개 (전공/관심분야) -->
-        <p style="color: var(--text-secondary); opacity: 0.7; max-width: 760px; margin: 0 auto; font-weight: 300;">
-            Graduate Student in Intelligent Robotics Engineering (SKKU).  
-            I work on <strong>capacitive proximity sensing</strong>, 
-            <strong>pre-contact safety</strong>, and 
-            <strong>reactive robot control</strong> for HRI.
-            <!-- ↑ 여기 문장만 바꾸면 최상단 소개 문구 변경됨 -->
+        <p style="color: var(--text-secondary); opacity: 0.75; max-width: 820px; margin: 0 auto; font-weight: 300;">
+            M.S. Student in Intelligent Robotics, Sungkyunkwan University<br>
+            Research on <strong>proximity sensing</strong>, <strong>reactive motion control</strong>,
+            and <strong>safe human–robot interaction (HRI)</strong>.
         </p>
     </div>
 </div>
@@ -29,23 +25,46 @@ permalink: /about/
     <div class="container">
 
         <!-- =======================
-             PROFILE / 자기소개
+             PROFILE
              ======================= -->
         <section class="about-section">
-            <h2>Profile</h2>  <!-- 섹션 제목 -->
+            <h2>Profile</h2>
 
-            <!-- 자기소개 본문 (누구인지, 연구 방향) -->
             <p>
-                I am <strong>Sungjin Han</strong>, a graduate student focusing on safe HRI using proximity sensing.
+                I am <strong>Sungjin Han</strong>, a master’s student in the
+                <strong>Intelligent Robotics program at Sungkyunkwan University</strong>, advised by
+                <strong>Prof. Hyouk Ryeol Choi</strong>.
             </p>
 
             <p>
-                I am currently integrating multiple proximity sensor modules on a collaborative manipulator (UR10)
-                and improving signal reliability under robot motion using learning-based compensation.
+                My research focuses on <strong>real-time adaptive reactive control</strong> using
+                <strong>bendable capacitive proximity sensors</strong>.
+                I aim to improve safety and robustness of collaborative robots
+                by enabling pre-contact perception and motion-aware sensor compensation.
             </p>
+        </section>
 
-            <!-- ↑ 이 두 문단을 합쳐서
-                 "나는 누구이고, 지금 뭘 연구 중인가"를 설명 -->
+        <!-- =======================
+             EDUCATION
+             ======================= -->
+        <section class="about-section">
+            <h2>Education</h2>
+
+            <ul class="getting-started-steps">
+                <li>
+                    <strong>M.S. in Intelligent Robotics</strong><br>
+                    Sungkyunkwan University, Suwon, Korea (Sep. 2024 – Present)<br>
+                    Thesis: <em>A Real-Time Adaptive Reactive Control Framework Using a Bendable Capacitive Proximity Sensor</em><br>
+                    GPA: 4.17 / 4.5
+                </li>
+
+                <li>
+                    <strong>B.S. in Mechanical System Engineering</strong><br>
+                    Hansung University, Seoul, Korea (Mar. 2017 – Aug. 2023)<br>
+                    Thesis: <em>Deep Learning–Based 4-DOF Robotic Manipulator for Automated Logistics Management</em><br>
+                    GPA: 3.57 / 4.5
+                </li>
+            </ul>
         </section>
 
         <!-- =======================
@@ -54,127 +73,120 @@ permalink: /about/
         <section class="about-section">
             <h2>Research Interests</h2>
 
-            <!-- 카드 형태로 연구 관심사 나열 -->
             <div class="perfect-for-grid">
-
                 <div class="perfect-for-item">
                     <h4>Proximity Sensing</h4>
-                    <p>Capacitive proximity sensors, electrode design, shielding, mounting.</p>
+                    <p>Capacitive sensors, electrode design, shielding, and field-based sensing.</p>
+                </div>
+
+                <div class="perfect-for-item">
+                    <h4>Reactive Motion Control</h4>
+                    <p>Real-time robot motion generation and safety-oriented control.</p>
                 </div>
 
                 <div class="perfect-for-item">
                     <h4>HRI Safety</h4>
-                    <p>Pre-contact detection, emergency stop, avoidance behaviors.</p>
-                </div>
-
-                <div class="perfect-for-item">
-                    <h4>Robot Control</h4>
-                    <p>Reactive motion generation and real-time control integration.</p>
+                    <p>Pre-contact detection, emergency stop, and avoidance behaviors.</p>
                 </div>
 
                 <div class="perfect-for-item">
                     <h4>Learning for Sensors</h4>
-                    <p>Self-detection compensation using joint-state based prediction.</p>
+                    <p>Motion-induced self-detection compensation using joint-state prediction.</p>
                 </div>
-
-                <!-- 카드 하나 = 관심 주제 하나
-                     필요하면 div 하나 복사해서 추가 가능 -->
             </div>
         </section>
 
         <!-- =======================
-             HIGHLIGHTS (핵심 성과)
+             RESEARCH & PROJECT HIGHLIGHTS
              ======================= -->
         <section class="about-section">
-            <h2>Highlights</h2>
+            <h2>Research & Project Highlights</h2>
 
-            <!-- 프로젝트/연구 핵심 요약 카드 -->
             <div class="features-list">
-
                 <div class="feature-item">
-                    <h3><i class="fas fa-robot"></i> UR10 Proximity Integration</h3>
+                    <h3><i class="fas fa-robot"></i> UR10 Proximity Sensor Integration</h3>
                     <p>
-                        Integrated capacitive proximity sensors on UR10 links for pre-contact safety.
+                        Integrated multiple capacitive proximity sensor modules on a UR10 manipulator
+                        for real-time pre-contact safety experiments.
                     </p>
                 </div>
 
                 <div class="feature-item">
                     <h3><i class="fas fa-wave-square"></i> Self-Detection Compensation</h3>
                     <p>
-                        Learning-based prediction of motion-induced sensor variations.
+                        Developed learning-based models to compensate motion-induced sensor variations
+                        using joint position and velocity inputs.
                     </p>
                 </div>
 
                 <div class="feature-item">
                     <h3><i class="fas fa-bolt"></i> Reactive Safety Behaviors</h3>
                     <p>
-                        Real-time emergency stop and avoidance experiments.
+                        Implemented emergency stop and avoidance behaviors based on proximity feedback.
                     </p>
                 </div>
 
                 <div class="feature-item">
-                    <h3><i class="fas fa-tools"></i> Hardware Robustness</h3>
+                    <h3><i class="fas fa-industry"></i> Industrial Collaboration</h3>
                     <p>
-                        Cable noise, MCU fixation, and sensor mounting stability analysis.
+                        Participated in the development of a proximity sensor SoC platform for
+                        robot collision safety in collaboration with AIDIN Robotics.
                     </p>
                 </div>
-
-                <!-- 여기 = "내가 실제로 한 일"을 강조하는 부분
-                     교수님/기업이 가장 많이 보는 섹션 -->
             </div>
+        </section>
+
+        <!-- =======================
+             PUBLICATIONS & PATENTS
+             ======================= -->
+        <section class="about-section">
+            <h2>Publications & Patents</h2>
+
+            <ul class="getting-started-steps">
+                <li>
+                    <strong>KRcC 2026</strong> (Poster)<br>
+                    “A Real-Time Adaptive Reactive Control Framework Using a Bendable Capacitive Proximity Sensor”
+                </li>
+
+                <li>
+                    <strong>KRcC 2026</strong> (Poster)<br>
+                    “Development of a Non-Contact Capacitive Proximity Sensor Platform for Safe HRI”
+                </li>
+
+                <li>
+                    <strong>Patent Application</strong><br>
+                    Bendable Sensor Platform, KR Application No. 10-2024-0202353
+                </li>
+            </ul>
         </section>
 
         <!-- =======================
              TECH STACK
              ======================= -->
         <section class="about-section">
-            <h2>Tech Stack</h2>
+            <h2>Technical Skills</h2>
 
-            <!-- 사용 기술 아이콘 나열 -->
             <div class="tech-stack">
-
-                <div class="tech-item">
-                    <i class="fas fa-code"></i>
-                    <span>C++ / Python</span>
-                </div>
-
-                <div class="tech-item">
-                    <i class="fas fa-robot"></i>
-                    <span>ROS2</span>
-                </div>
-
-                <div class="tech-item">
-                    <i class="fas fa-microchip"></i>
-                    <span>MCU + Sensors</span>
-                </div>
-
-                <div class="tech-item">
-                    <i class="fas fa-chart-line"></i>
-                    <span>MATLAB</span>
-                </div>
-
-                <div class="tech-item">
-                    <i class="fas fa-brain"></i>
-                    <span>PyTorch / ONNX</span>
-                </div>
-
-                <!-- 아이콘 + 기술명만 바꾸면 됨 -->
+                <div class="tech-item"><span>C / C++ / Python</span></div>
+                <div class="tech-item"><span>ROS 2</span></div>
+                <div class="tech-item"><span>MATLAB / LabVIEW</span></div>
+                <div class="tech-item"><span>STM32 / MCU Firmware</span></div>
+                <div class="tech-item"><span>Inventor / NX / Altium</span></div>
+                <div class="tech-item"><span>PyTorch / ONNX</span></div>
             </div>
         </section>
 
         <!-- =======================
-             CONTACT / 링크
+             CONTACT
              ======================= -->
         <section class="about-section">
             <h2>Contact</h2>
 
-            <div class="getting-started-steps">
+            <ul class="getting-started-steps">
+                <li><strong>Email:</strong> sungjinhan@g.skku.edu</li>
                 <li><strong>GitHub:</strong> <a href="https://github.com/sung-jin123" target="_blank">github.com/sung-jin123</a></li>
-                <li><strong>Email:</strong> your@email.com</li>
-                <li><strong>CV:</strong> (PDF 링크 가능)</li>
-            </div>
+            </ul>
 
-            <!-- 버튼 영역 -->
             <div class="cta-buttons">
                 <a href="{{ '/projects/' | relative_url }}" class="btn-primary">
                     View Projects
