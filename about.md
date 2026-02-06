@@ -32,7 +32,7 @@ permalink: /about/
 
             <p>
                 I am <strong>Sungjin Han</strong>, a master’s student in the
-                <strong>Intelligent Robotics program at Sungkyunkwan University</strong>, advised by
+                <strong>Intelligent Robotics at Sungkyunkwan University</strong>, advised by
                 <strong>Prof. Hyouk Ryeol Choi</strong>.
             </p>
 
@@ -55,14 +55,12 @@ permalink: /about/
                     <strong>M.S. in Intelligent Robotics</strong><br>
                     Sungkyunkwan University, Suwon, Korea (Sep. 2024 – Present)<br>
                     Thesis: <em>A Real-Time Adaptive Reactive Control Framework Using a Bendable Capacitive Proximity Sensor</em><br>
-                    GPA: 4.17 / 4.5
                 </li>
 
                 <li>
                     <strong>B.S. in Mechanical System Engineering</strong><br>
                     Hansung University, Seoul, Korea (Mar. 2017 – Aug. 2023)<br>
                     Thesis: <em>Deep Learning–Based 4-DOF Robotic Manipulator for Automated Logistics Management</em><br>
-                    GPA: 3.57 / 4.5
                 </li>
             </ul>
         </section>
@@ -75,23 +73,19 @@ permalink: /about/
 
             <div class="perfect-for-grid">
                 <div class="perfect-for-item">
-                    <h4>Proximity Sensing</h4>
-                    <p>Capacitive sensors, electrode design, shielding, and field-based sensing.</p>
-                </div>
-
-                <div class="perfect-for-item">
                     <h4>Reactive Motion Control</h4>
-                    <p>Real-time robot motion generation and safety-oriented control.</p>
                 </div>
 
                 <div class="perfect-for-item">
-                    <h4>HRI Safety</h4>
-                    <p>Pre-contact detection, emergency stop, and avoidance behaviors.</p>
+                    <h4>Proximity Sensor Based Robot Control</h4>
                 </div>
 
                 <div class="perfect-for-item">
-                    <h4>Learning for Sensors</h4>
-                    <p>Motion-induced self-detection compensation using joint-state prediction.</p>
+                    <h4>Robotic Fusion Sensor for HRI</h4>
+                </div>
+
+                <div class="perfect-for-item">
+                    <h4>Proximity Sensor Utilizing Field Sensing</h4>
                 </div>
             </div>
         </section>
@@ -104,18 +98,10 @@ permalink: /about/
 
             <div class="features-list">
                 <div class="feature-item">
-                    <h3><i class="fas fa-robot"></i> UR10 Proximity Sensor Integration</h3>
+                    <h3><i class="fas fa-robot"></i>Proximity Sensor Integration</h3>
                     <p>
-                        Integrated multiple capacitive proximity sensor modules on a UR10 manipulator
+                        Integrated multiple capacitive proximity sensor modules on a manipulator
                         for real-time pre-contact safety experiments.
-                    </p>
-                </div>
-
-                <div class="feature-item">
-                    <h3><i class="fas fa-wave-square"></i> Self-Detection Compensation</h3>
-                    <p>
-                        Developed learning-based models to compensate motion-induced sensor variations
-                        using joint position and velocity inputs.
                     </p>
                 </div>
 
@@ -172,7 +158,6 @@ permalink: /about/
                 <div class="tech-item"><span>MATLAB / LabVIEW</span></div>
                 <div class="tech-item"><span>STM32 / MCU Firmware</span></div>
                 <div class="tech-item"><span>Inventor / NX / Altium</span></div>
-                <div class="tech-item"><span>PyTorch / ONNX</span></div>
             </div>
         </section>
 
@@ -184,15 +169,11 @@ permalink: /about/
 
             <ul class="getting-started-steps">
                 <li><strong>Email:</strong> sungjinhan@g.skku.edu</li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/sung-jin123" target="_blank">github.com/sung-jin123</a></li>
             </ul>
 
             <div class="cta-buttons">
                 <a href="{{ '/projects/' | relative_url }}" class="btn-primary">
                     View Projects
-                </a>
-                <a href="https://github.com/sung-jin123" class="btn-secondary" target="_blank">
-                    GitHub Profile
                 </a>
             </div>
         </section>
