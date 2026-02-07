@@ -4,7 +4,7 @@ title: "Proximity Reactive Control"
 description: "Real-time adaptive reactive safety control using a bendable capacitive proximity sensor."
 date: 2026-01-30
 categories: [Robotics, HRI, Proximity Sensing, ROS2]
-featured_image: "/assets/images/projects/proximity-reactive-control/featured.jpg"
+featured_image: "/assets/images/projects/proximity-reactive-control/featured.png"
 
 gallery:
   - type: "image"
