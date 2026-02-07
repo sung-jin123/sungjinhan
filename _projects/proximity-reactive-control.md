@@ -8,7 +8,7 @@ featured_image: "/assets/images/projects/proximity-reactive-control/featured.jpg
 
 gallery:
   - type: "image"
-    file: "/assets/images/projects/proximity-reactive-control/gallery/sensor_flat_vs_bending.jpg"
+    file: "/assets/images/projects/proximity-reactive-control/gallery/sensor_flat_vs_bending.png"
     description: "Kerf-pattern electrode enables flat↔bending configuration."
   - type: "image"
     file: "/assets/images/projects/proximity-reactive-control/gallery/framework_architecture.png"
