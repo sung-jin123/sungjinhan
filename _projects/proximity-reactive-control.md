@@ -11,11 +11,11 @@ gallery:
     file: "/assets/images/projects/proximity-reactive-control/gallery/sensor_flat_vs_bending.png"
     description: "Kerf-pattern electrode enables flat↔bending configuration."
   - type: "image"
+    file: "/assets/images/projects/proximity-reactive-control/gallery/Installation of the bendable proximity sensor.png"
+    description: "Installation of the bendable proximity sensor on robotic platforms."
+  - type: "image"
     file: "/assets/images/projects/proximity-reactive-control/gallery/framework_architecture.png"
-    description: "Adaptive reactive control architecture (CAN→ROS monitoring + safety state logic)."
-  - type: "video"
-    file: "/assets/images/projects/proximity-reactive-control/demo/estop_demo.mp4"
-    description: "Real robot demo: distance threshold triggers E-stop and joint velocity converges to zero."
+    description: "Architecture of adaptive reactive control framework."
 ---
 
 ## Motivation 
@@ -64,6 +64,12 @@ Experiments with quintic-polynomial trajectories show that when an obstacle appr
 
 ## Publications / Poster
 - **KROC 2026 (Poster)**: *A Real-Time Adaptive Reactive Control Framework Using a Bendable Capacitive Proximity Sensor*
+
+---
+
+## Publications / Poster
+- 📄 **Poster (PDF)**:  
+  [**KROC 2026 (Poster)**]( /assets/pdfs/proximity-reactive-control/A_Real_Time_Adaptive_Reactive_Control_Framework_Using_a_Bendable_Capacitive_Proximity_Sensor.pdf )
 
 ---
 
