@@ -18,7 +18,7 @@ gallery:
     description: "Real robot demo: distance threshold triggers E-stop and joint velocity converges to zero."
 ---
 
-## Overview
+## Motivation
 This project presents a **real-time adaptive reactive control framework** for **pre-contact safety** in **Human–Robot Interaction (HRI)** using a **bendable capacitive proximity sensor** mounted on a manipulator.  
 A key goal is to detect nearby objects **before contact** and trigger **reactive safety behaviors** in real time.
 
@@ -41,8 +41,8 @@ Each capacitive sensing layer uses a **kerf pattern** so the same sensor can be 
 Capacitive sensing provides near-field sensitivity and wide FoV, but its distance relationship is **nonlinear**.  
 To address this, a ToF sensor is fused to **linearize/denoise** the distance estimate using an exponential model:
 
-- Model fitting:  `X = a · exp(bY)`
-- Distance inference: `Y = (ln X - ln a) / b`
+- Model fitting:  $X = a \cdot e^{bY}$
+- Distance inference: $Y = \frac{\ln X - \ln a}{b}$
 
 where `X` is the capacitive measurement and `Y` is the distance.
 
