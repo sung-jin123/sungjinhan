@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Proximity Reactive Control"
+title: "Proximity Reactive Control(E-Stop)"
 description: "Real-time adaptive reactive safety control using a bendable capacitive proximity sensor."
 date: 2026-01-30
 categories: [Robotics, HRI, Proximity Sensing, ROS2]
