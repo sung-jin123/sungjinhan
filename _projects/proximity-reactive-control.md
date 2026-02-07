@@ -1,13 +1,10 @@
 ---
 layout: project
 title: "Proximity Reactive Control"
-description: "Real-time adaptive reactive safety control using a bendable capacitive proximity sensor (UR10, CAN→ROS, ToF fusion)."
+description: "Real-time adaptive reactive safety control using a bendable capacitive proximity sensor."
 date: 2026-01-30
 categories: [Robotics, HRI, Proximity Sensing, ROS2]
 featured_image: "/assets/images/projects/proximity-reactive-control/featured.jpg"
-github_url: "https://github.com/sung-jin123/sung-jin123.github.io"
-# (선택) 유튜브 링크가 있으면 데모 버튼이 생깁니다.
-# demo_url: "https://youtu.be/XXXXXXXXXXX"
 
 # (선택) 페이지 상단에 갤러리(이미지/동영상) 자동 노출
 gallery:
@@ -23,7 +20,7 @@ gallery:
 ---
 
 ## Overview
-This project presents a **real-time adaptive reactive control framework** for **pre-contact safety** in **Human–Robot Interaction (HRI)** using a **bendable capacitive proximity sensor** mounted on a manipulator (UR10).  
+This project presents a **real-time adaptive reactive control framework** for **pre-contact safety** in **Human–Robot Interaction (HRI)** using a **bendable capacitive proximity sensor** mounted on a manipulator.  
 A key goal is to detect nearby objects **before contact** and trigger **reactive safety behaviors** in real time.  
 (커프(Kerf) 패턴 전극 + ToF 융합 기반 거리 추정 + CAN→ROS 스트리밍 + Safety State Logic 기반 E-stop 검증) :contentReference[oaicite:4]{index=4}
 
