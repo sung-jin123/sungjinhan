@@ -22,7 +22,7 @@ gallery:
 ## Overview
 This project presents a **real-time adaptive reactive control framework** for **pre-contact safety** in **Human–Robot Interaction (HRI)** using a **bendable capacitive proximity sensor** mounted on a manipulator.  
 A key goal is to detect nearby objects **before contact** and trigger **reactive safety behaviors** in real time.  
-(커프(Kerf) 패턴 전극 + ToF 융합 기반 거리 추정 + CAN→ROS 스트리밍 + Safety State Logic 기반 E-stop 검증) :contentReference[oaicite:4]{index=4}
+
 
 ---
 
