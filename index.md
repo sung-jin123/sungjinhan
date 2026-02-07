@@ -130,8 +130,7 @@ layout: default
           <h3><i class="fas fa-microchip"></i> Electronics</h3>
           <div class="skill-tags">
             <span class="skill-tag">STMCubeIDE</span>
-            <span class="skill-tag">PCB Design</span>
-            <span class="skill-tag">Sensors</span>
+            <span class="skill-tag">Altium</span>
           </div>
         </div>
         <div class="skill-category">
